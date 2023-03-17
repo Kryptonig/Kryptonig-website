@@ -1,0 +1,61 @@
+.login-form{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.login-form form{
+    width: 350px;
+    height: 450px;
+    background: white;
+    border-radius: 10px;
+    box-shadow: var(--box-shadow);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 20px;
+}
+.h h3{
+    font-family: var(--font-familyone);
+    font-size: 23px;
+    font-weight: 800;
+}
+.login-form form input{
+    width: 300px;
+    padding: 10px 10px;
+    background: rgb(241, 241, 241);
+    border: none;
+    border-radius: 10px;
+    outline: none;
+    font-size: 19px;
+    font-family: var(--font-familyone);
+}
+.login-form form input:focus{
+    outline: 2px solid var(--color-one);
+}
+.login-form form button{
+    padding: 10px;
+    width: 300px;
+    border: none;
+    background: var(--color-one);
+    color: #fff;
+    font-family: var(--font-familyone);
+    font-size: 20px;
+    font-weight: 600;
+    border-radius: 10px;
+}
+small{
+    font-family: var(--font-familyone);
+    font-size: 14px;
+    color: var(--color-one);
+    display: none;
+}
+.success{
+    display: initial !important;
+}
+.wrong{
+    color: red;
+    display: initial !important;
+}

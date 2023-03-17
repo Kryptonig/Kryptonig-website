@@ -1,0 +1,311 @@
+@import'offer.css';
+@import'podcast.css';
+@import'Gallery.css';
+@import 'more.css';
+@import'footer.css';
+@import'about.css';
+@import'team.css';
+@import 'blogs.css';
+@import 'blogpost.css';
+
+
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@600;700&display=swap');
+
+html{
+    scroll-behavior: smooth;
+    scrollbar-width: none;
+}
+
+::-webkit-scrollbar{
+    display: none;
+}
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+
+}
+a{
+    text-decoration: none;
+    color:#000;
+} 
+li{
+    list-style-type: none;
+}
+
+:root{
+    --primary-color:#FFF;
+    --color-one:#0E5BA7;
+    --color-two:#F39333;
+    --box-shadow:0px 5px 5px rgba(0, 0, 0, 0.4);
+    --border-one:1px solid rgba(0, 0, 0, 0.25);
+    --font-familyone:'Raleway', sans-serif;
+    --font-familytwo: 'Open Sans', sans-serif;
+}
+body{
+    width: 100%;
+    height: 100%;
+    background-image: url(../kryptonigImg/Group\ 14.png);
+    background-repeat: repeat-y;
+    background-size: contain;
+    background-position: center;
+}
+.container{
+    width: 100%;
+    
+}
+header{
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+    padding: 20px;
+    background: #fff;
+}
+.logo img{
+    width: 100px;
+    height: 90px;
+    object-fit: cover;
+}
+.links{
+    display: flex;
+    flex-direction: column;
+    gap: 60px;
+    background:var(--color-one) ;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 0;
+    height: 100vh;
+    transition: all 0.5s ease-in-out ;
+    overflow: hidden;
+    z-index: 9;
+}
+.links ul{
+    padding-left: 40px;
+}
+.links ul li{
+    font-family: var(--font-familytwo);
+    margin-top: 30px;
+}
+.links ul li a{
+    color: var(--primary-color);
+    font-size: 20px;
+}
+.join{
+    padding-left:40px;
+}
+.join a{
+    padding: 10px 20px;
+    background: var(--primary-color);
+    font-family: var(--font-familytwo);
+    color: var(--color-one);
+    font-weight: 700;
+
+}
+.active{
+    width: 70%;
+}
+.toggle button{
+    padding: 10px;
+    font-size: 30px;
+    background: none;
+    font-weight: 700;
+    border: none;
+    outline: none;
+}
+
+/*.contain{
+    background-image: url(../kryptonigImg/Group\ 14.png);
+    background-repeat: repeat-y;
+    background-size: contain;
+    background-position: center;
+    height: 100%;
+    width: 100%;
+}*/
+
+/**** HERO SECTION ***/
+
+.hero-section{
+    width: 100%;
+    height: 700px;
+    background-position: 50%;
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+.div{
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.unlocking{
+    font-size: 20px;
+    font-family: var(--font-familyone);
+    font-weight: 700;
+}
+.para{
+    font-size: 12px;
+    font-family: var(--font-familytwo);
+    text-align: center;
+    margin-top: 5px;
+    line-height: 25px;
+    padding: 10px;
+}
+.cont{
+    margin-top: 10px;
+    display: flex;
+    gap: 30px;
+    margin-top: 20px;
+}
+.a{
+    padding: 10px 20px;
+    background: var(--color-one);
+    font-family: var(--font-familytwo);
+    color: #fff;
+}
+.co{
+    padding: 10px 20px;
+    border: 1px solid var(--color-two);
+    font-family: var(--font-familytwo);
+}
+.group1{
+    margin-top: -100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.group1 img{
+    width: 500px;
+    height: 600px;
+    object-fit: contain;
+
+}
+
+.at{
+    text-align: center;
+    font-family: var(--font-familyone);
+    font-size: 15px;
+    margin-top: 10px;
+    width: 90%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    line-height: 25px;
+    
+}
+@media screen and (min-width:550px) {
+    .unlocking{
+        font-size: 25px;
+    }
+}
+
+@media screen and (min-width:700px){
+    .toggle button{
+        font-size: 40px;
+    }
+    .unlocking{
+        font-size: 33px;
+    }
+    .para{
+        font-size: 15px;
+    }
+    .group1 img{
+        width: 600px;
+    }
+    .active{
+        width: 50%;
+    }
+    
+}
+@media screen and (min-width:768px) {
+    #footer{
+        top: 1100px !important ;
+    }
+    .para{
+        width: 75%;
+    }
+}
+@media screen and (min-width:900px) {
+    .toggle{
+        display: none;
+    }
+    .links{
+        width: 100%;
+        position: initial;
+        background: none;
+        display: flex;
+        flex-direction: row;
+        height: auto;
+        gap: 30px;
+        align-items: center;
+        justify-content: center;
+    }
+    .links ul{
+        display: flex;
+        padding-left: 0px;
+        margin-top: -30px;
+    }
+    .links ul li a{
+        color: #000;
+        font-size: 16px;
+    }
+    .links ul li{
+        margin-right: 40px;
+    }
+    .join a{
+        background: var(--color-one);
+        color: var(--primary-color);
+        font-weight: 100;
+    }
+    header{
+        padding: 10px;
+    }
+    .unlocking{
+        font-size: 35px;
+    }
+    .para{
+        font-size: 20px;
+    }
+    .group1{
+        margin-top:-5%;
+    }
+    .group1 img{
+        width: 700px;
+
+    }
+}
+@media screen and (min-width:1100px){
+    header{
+        gap: 17%;
+    }
+    .links ul{
+        margin-right: 20px;
+    }
+    .para{
+        font-size: 15px;
+        width: 70%;
+    }
+}
+@media screen and(min-width:1024px) {
+    .group1{
+        background :var(--color-two);
+    }
+    .unlocking h3{
+       text-align: center;
+       font-weight: 500px;
+       width: 941px;
+       display: flex;
+       justify-content: center;
+       align-items: center;
+    }
+    #footer{
+        top: 200px !important ;
+    }
+}
+
+/* Aninamtion*/

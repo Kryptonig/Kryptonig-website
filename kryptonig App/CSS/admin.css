@@ -1,0 +1,314 @@
+@import 'blogs.css';
+@import 'login.css';
+
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@600;700&display=swap');
+
+html{
+    scroll-behavior: smooth;
+    scrollbar-width: none;
+}
+
+::-webkit-scrollbar{
+    display: none;
+}
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+
+}
+a{
+    text-decoration: none;
+    color:#000;
+} 
+li{
+    list-style-type: none;
+}
+
+:root{
+    --primary-color:#FFF;
+    --color-one:#0E5BA7;
+    --color-two:#F39333;
+    --box-shadow:0px 5px 5px rgba(0, 0, 0, 0.4);
+    --border-one:1px solid rgba(0, 0, 0, 0.25);
+    --font-familyone:'Raleway', sans-serif;
+    --font-familytwo: 'Open Sans', sans-serif;
+}
+
+#my-header{
+    width: 100%;
+    height: auto;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px;
+}
+.admin-logo{
+    width: 120px;
+    height: 120px;
+}
+.admin-logo img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.upload-settings{
+    position: absolute;
+    top: 0%;
+    left: 0%;
+    width: 0;
+    height: 100vh;
+    overflow: hidden;
+    background: #0E5BA7;
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+    align-items: center;
+    justify-content: center;
+    transition: all 0.5s ease-in-out;
+}
+.add-width{
+    width: 60%;
+}
+.remove-width{
+    width: 0;
+}
+.upload button{
+   padding: 10px 20px;
+   font-family: var(--font-familyone);
+   font-weight: 600;
+   font-size: 15px;
+   border: none;
+   background: #FFF;
+   outline: none;
+}
+.up{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+}
+.upload-settings img{
+    width: 30px;
+    height: 30px;
+    object-fit: cover;
+}
+.admin-tittle{
+    font-family: var(--font-familyone);
+    font-weight: 600;
+    font-size: 23px;
+    color: var(--color-one);
+    margin-right: 30px;
+}
+#admin-toggle{
+    font-size: 30px;
+    border: none;
+    background: none;
+    font-weight: 600;
+}
+.settings a{
+    color: #FFF;
+    font-family: var(--font-familyone);
+    font-size: 20px;
+    font-weight: 500;
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}  
+.blogs{
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 50px;
+    gap: 20px;
+}
+.notice{
+    text-align: center;
+    font-family: var(--font-familyone);
+    font-weight: 600;
+    font-size: 23px;
+} 
+.form-div{
+    width: 100%;
+    height: 100vh;
+    background: rgba(0, 0, 0, 0.342);
+    position: absolute;
+    top: 0%;
+    display: none;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 0px;
+    margin-bottom: 20px;
+}
+.formshow{
+    display: flex;
+}
+.form-div form{
+    width: 300px;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    background: white;
+    padding: 20px;
+    border-radius: 20px;
+    box-sizing: var(--box-shadow);
+}
+.form-div form input{
+    width: 250px;
+    padding: 10px 0;
+    border: none;
+    background: rgb(240, 239, 239);
+    position: relative;
+    outline: none;
+    font-family: var(--font-familyone);
+    font-size: 15px;
+    border-radius: 10px;
+}
+.form-div form input::placeholder{
+    padding: 0 10px;
+    font-family: var(--font-familyone);
+    font-size: 15px;
+    position: relative;
+}
+.form-div form input:focus{
+    border: 1px solid var(--color-one);
+}
+.type{
+    display: flex;
+    flex-direction: column;
+}
+.type select{
+    width: 250px;
+    padding: 10px 0;
+    font-family: var(--font-familyone);
+    font-size: 15px;
+    outline: none;
+    border-radius: 10px;
+}
+.type label{
+    font-family: var(--font-familyone);
+    font-weight: 400;
+}
+#file{
+    background: none;
+    border: none;
+
+}
+.wrap{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    width: 100%;
+}
+.form-div form h3{
+    font-family: var(--font-familyone);
+    font-weight: 600;
+    font-size: 20px;
+    text-transform: capitalize;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.form-div form textarea{
+    width: 250px;
+    border-radius: 10px;
+    outline: none;
+    border: none;
+}
+.form-div form textarea:focus{
+    border: 2px solid var(--color-one);
+}
+.form-div form textarea::placeholder{
+    padding: 20px;
+    font-size: 17px;
+    font-family: var(--font-familyone);
+}
+
+.form-div form button{
+    width: 250px;
+    padding: 10px 0px;
+    background: var(--color-one);
+    color: white;
+    font-family: var(--font-familyone);
+    font-size: 18px;
+    font-weight: 600;
+    outline: none;
+    border: none;
+    border-radius: 10px;
+}
+.none{
+    display: none;
+}
+
+.form-div form h3 span{
+    background: #0E5BA7;
+    color: #FFF;
+    font-family: var(--font-familyone);
+    margin-left: 20px;
+    padding: 5px;
+}
+@media screen and (min-width:768px) {
+    #my-header{
+        position: initial;
+    }
+    .upload-settings{
+        position: initial !important;
+        width: auto;
+        height: auto;
+        flex-direction: row;
+        background: none;
+        gap: 40px;
+    }
+    #admin-toggle{
+        display: none;
+    }
+    .upload button{
+        background: #0E5BA7;
+        color: #FFF;
+    }
+    .settings a{
+        color: #000;
+    }
+    .form-div form{
+        width: 500px;
+        padding: 40px;
+    }
+    .form-div form input,select{
+        width: 400px;
+    }
+    .form-div form select{
+        width: 400px;
+    }
+    .form-div form textarea{
+        width: 400px;
+    }
+    .form-div form button{
+        width: 400px;
+    }
+}
+
+@media screen and (min-width:1024px){
+    .form-div form{
+        width: 700px;
+        height: auto;
+    }
+    .wrap{
+        display: flex;
+        width: 100%;
+        flex-wrap: wrap;
+        gap: 20px;
+    }
+}
