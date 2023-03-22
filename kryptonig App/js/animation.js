@@ -1,12 +1,11 @@
-const element = document.querySelector('box');
+$(window).scroll(function() {
+  $('.reveal-img').each(function() {
+     var imagePos = $(this).offset().top;
+     var topOfWindow = $(window).scrollTop();
 
-const observer = new IntersectionObserver((entries) => {
-    entries.forEach(entry => {
-      if (entry.isIntersecting) {
-        element.classList.add('animate')
-      }
-    });
+     if (imagePos < topOfWindow + $(window).height() - 100) {
+        $(this).css('opacity', '1');
+        $(this).css('transform', 'translateY(0)');
+     }
   });
-  
-  
-  observer.observe(element);
+});
