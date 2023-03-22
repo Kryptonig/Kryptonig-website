@@ -70,6 +70,7 @@ Blogs.forEach((post)=>{
     technologyDiv.classList.add('c-t')
     link.classList.add('linkdiv')
     link.setAttribute('href', './Featuredposts.html')
+    bigDiv.classList.add('reveal-img')
     //  The contents
     publisherName.textContent = post.publisher
     publishDate.textContent = post.DatePublished
