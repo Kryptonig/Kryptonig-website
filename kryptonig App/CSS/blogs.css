@@ -40,6 +40,7 @@
       width: 100%;
       background-color: rgba(0, 0, 0, 0.39);
        background-blend-mode: multiply;
+       
   }
   /* Next & previous buttons */
   .prev, .next {
@@ -146,7 +147,7 @@
   }
   .pp{
     font-family: var(--font-familytwo);
-    font-size: 15px;
+    font-size: 12px;
   }
 
   .posts{
@@ -172,6 +173,7 @@
     display: flex;
     flex-direction: column;
     gap: 15px;
+    margin-top: 30px;
   }
   .blog-picture{
     width: 100%;
@@ -195,6 +197,7 @@
     font-family: var(--font-familyone);
     font-weight: 600;
     font-size: 21px;
+    margin-top: 10px;
   }
 
   .smallTextDiv{
@@ -203,6 +206,7 @@
     line-height: 25px;
     font-family: var(--font-familyone);
     text-align: justify;
+    margin-top: 10px;
   }
   .smallTextDiv2{
     font-size: 17px;

@@ -54,7 +54,7 @@ body{
 }
 .container{
     width: 100%;
-    
+    box-sizing: border-box;
 }
 header{
     width: 100%;
@@ -97,6 +97,7 @@ header{
 }
 .join{
     padding-left:40px;
+    margin-top: 18px;
 }
 .join a{
     padding: 10px 20px;
@@ -104,6 +105,7 @@ header{
     font-family: var(--font-familytwo);
     color: var(--color-one);
     font-weight: 700;
+   
 
 }
 .active{
@@ -147,6 +149,7 @@ header{
     font-size: 20px;
     font-family: var(--font-familyone);
     font-weight: 700;
+    text-align: center;
 }
 .para{
     font-size: 12px;
@@ -159,19 +162,21 @@ header{
 .cont{
     margin-top: 10px;
     display: flex;
-    gap: 30px;
+    gap: 40px;
     margin-top: 20px;
 }
 .a{
-    padding: 10px 20px;
+    padding: 10px 15px;
     background: var(--color-one);
     font-family: var(--font-familytwo);
     color: #fff;
+    
 }
 .co{
     padding: 10px 20px;
     border: 1px solid var(--color-two);
     font-family: var(--font-familytwo);
+    margin-left: 8px;
 }
 .group1{
     margin-top: -100px;
@@ -288,7 +293,7 @@ header{
     }
     .para{
         font-size: 15px;
-        width: 70%;
+        width: 70%; 
     }
 }
 @media screen and(min-width:1024px) {
@@ -305,6 +310,9 @@ header{
     }
     #footer{
         top: 200px !important ;
+    }
+    .para{
+        line-height: 35px;
     }
 }
 

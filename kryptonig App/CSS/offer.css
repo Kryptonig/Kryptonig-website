@@ -19,17 +19,12 @@
     flex-wrap: wrap;
     justify-content: center;
     align-items: center;
-    gap: 30px;
+    gap: 70px;
     margin-bottom: 30px;
     margin-top: 30px;
-    animation-name: fade-in;
-    animation-duration: 6s;
-    animation-timing-function: ease-in-out;
-    animation-fill-mode: forwards;
-    opacity: 0;
 }
 .box1{
-    width: 350px;
+    width: 300px;
     height: auto;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.1), 0 6px 15px 0 rgba(0, 0, 0, 0.15);
     display: flex;
@@ -37,26 +32,19 @@
     align-items: center;
     flex-direction: column;
     padding: 50px 19px 50px 19px;
-    gap: 19px;
+    gap: 24px;
     background: #fff;
+    margin-top: 30px;
     
 }
 
 /*** animation*/
-@keyframes fade-in {
-    from { opacity: 0;
-    top: 50; }
-    to { opacity: 1;
-    top: 0; }
-  }
 
-.animate {
-    opacity: 1;
-    animation-name: fade-in;
-    animation-duration: 6s;
-    animation-timing-function: ease-in-out;
-    animation-fill-mode: forwards;
-  }
+.reveal-img {
+    opacity: 0;
+    transform: translateY(200px);
+    transition: opacity 1s ease, transform 1s ease;
+ }
 
 .show{
     font-family: var(--font-familyone);
@@ -92,7 +80,7 @@
     margin-top: 20px;
     padding: 20px;
     display: flex;
-    gap: 19px;
+    gap: 30px;
     overflow-x: scroll;
     overflow-y: hidden;
     scrollbar-width: none;
@@ -100,16 +88,17 @@
     width: 100%;
 }
 .project1{
-    min-width: 300px;
-    height:500px;
+    min-width:250px;
+    height:auto;
     padding: 0px, 0px, 10px, 0px;
     border-bottom-left-radius: 50px;
     border-bottom-right-radius: 50px;
     background-color: var(--color-one);
     display: flex;
     flex-direction: column;
-    gap: 31px;
-    padding: 0px, 0px, 10px, 0px;
+    gap: 100px;
+    margin-left: 20px;
+    padding-bottom: 20px;
 }
 
 .project-img{
@@ -127,18 +116,20 @@
     font-family: var(--font-familyone);
     font-weight: 700;
     text-align: center;
+    margin-top: 20px;
 }
 
 .ips{
     font-family: var(--font-familytwo);
     color: #fff;
     text-align: center;
+    margin-top: 20px;
+    font-size: 15px;
 }
 
 .dots{
     margin-top: 20px;
     display: flex;
-    gap: 5px;
     margin-bottom: 20px;
 }
 .dot{
@@ -146,18 +137,21 @@
     height: 10px;
     background-color: var(--color-two);
     border-radius: 20px;
+    margin-left: 5px;
 }
 .dot1{
     width: 30px;
     height: 10px;
     background-color: var(--color-two);
     border-radius: 20px;
+    margin-left: 5px;
 }
 .dot2{
     width: 20px;
     height: 10px;
     background-color: var(--color-two);
     border-radius: 20px;
+    margin-left: 5px;
 }
 
 @media screen and (min-width:768px) {

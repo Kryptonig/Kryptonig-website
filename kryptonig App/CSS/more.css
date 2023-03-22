@@ -9,12 +9,13 @@
     justify-content: center;
     align-items: center;
     padding: 20px;
+    margin-top: 50px;
 }
 .wanna h3{
     text-align: center;
     font-family: var(--font-familyone);
     color: #fff;
-    font-size: 30px;
+    font-size: 25px;
     font-weight: 600;
 }
 .wanna p{
@@ -52,6 +53,10 @@
     font-family: var(--font-familyone);
     font-weight: 400;
 
+}
+
+#wan{
+    top: 70px;
 }
 @media screen and (min-width:768px) {
     .wanna{
